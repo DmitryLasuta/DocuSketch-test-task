@@ -1,0 +1,28 @@
+.random-icon-generator {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 1rem;
+  min-width: 250px;
+}
+
+.random-icon-generator__button {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  text-align: center;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:hover:is(:not(:disabled)) {
+    background-color: black;
+    color: white;
+  }
+}
